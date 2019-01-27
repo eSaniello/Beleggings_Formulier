@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beleggingsaanvraag Formulier</title>
+</head>
+<body>
+
+<div class="container">
+  <h1>Beleggingsaanvraag formulier
+    <form action="beleggings_aanvraag.php" method="POST">
+      <input type="submit" id="alle_aanvragen" value="Alle Aanvragen" name="alle_aanvragen">
+    </form>
+  </h1>
+  
+  <form action="beleggings_aanvraag.php" method="POST" autocomplete="off">
+    <label for="naam">Naam</label>
+    <input type="text" id="naam" name="naam" placeholder="Uw naam.." required>
+
+    <label for="achternaam">Achternaam</label>
+    <input type="text" id="achternaam" name="achternaam" placeholder="Uw achternaam.." required>
+      
+    <label for="legitimatie_bewijs">Legitimatie bewijs</label>
+    <input type="text" id="legitimatie_bewijs" name="legitimatie_bewijs" placeholder="I.D./ Rijbewijs/ Paspoort.." required>
+      
+    <label for="geboortedatum">Geboortedatum</label>
+    <input type="date" id="geboortedatum" name="geboortedatum" required>
+      
+    <label for="adres">Adres</label>
+    <input type="text" id="adres" name="adres" placeholder="Uw adres.." required>
+      
+    <label for="mobiel">Telefoon nummer</label>
+    <input type="text" id="mobiel" name="mobiel" placeholder="Mobiel" required>
+    
+    <label for="beleggingsvorm">Wenst hierbij onderstaand(e) beleggingsvorm te kopen</label>
+    <select id="beleggingsvorm" name="beleggingsvorm">
+        <option value="Flexibile Deposito Rekening SRD (*)">Flexibile Deposito Rekening SRD (*)</option>
+        <option value="Fix Deposito Rekening EURO/USD (*)">Fix Deposito Rekening EURO/USD (*)</option>
+        <option value="Vaste Spaar Certificaat in EURO/USD">Vaste Spaar Certificaat in EURO/USD</option>
+        <option value="Vaste Deposito Certificaat">Vaste Deposito Certificaat</option>
+        <option value="Vaste Deposito Certificaat (geen nieuwe)">Vaste Deposito Certificaat (geen nieuwe)</option>
+      </select>
+
+    <label for="land">Land</label>
+    <select id="land" name="land">
+      <option value="Suriname">Suriname</option>
+      <option value="Australia">Australia</option>
+      <option value="Canada">Canada</option>
+      <option value="USA">USA</option>
+    </select>
+    
+    <label for="munt_eenheid">Te beleggen bedrag:</label>
+    <div class="custom-select" style="width:200px;">
+      <select id="munt_eenheid" name="munt_eenheid">
+        <option value="SRD">SRD</option>
+        <option value="EURO">EURO</option>
+        <option value="USD">USD</option>
+      </select>
+    </div>
+
+    <div class="bedrag">
+      <input type="number" id="bedrag" name="bedrag" placeholder="100" required> 
+    </div>
+    
+    <label for="ten_name_van">Ten name van:</label>
+    <input type="text" id="ten_name_van" name="ten_name_van" placeholder="Naam.." required>
+    
+    <label for="looptijd">Looptijd:</label>
+    <input type="text" id="looptijd" name="looptijd" placeholder="..." required>
+    
+    <label for="rente_percentage">Rente percentage:</label>
+    <div class="number">
+      <input type="number" id="rente_percentage" name="rente_percentage" placeholder="1.." required> %
+    </div>
+    
+    <label for="rente_cred_rekening_nr">De rente te crediteren op rekening nr.:</label>
+    <div class="number">
+      <input type="number" id="rente_cred_rekening_nr" name="rente_cred_rekening_nr" placeholder="0000000.." required> 
+    </div>
+    
+    <label for="bank">Bij de:</label>
+    <input type="text" id="bank" name="bank" placeholder="Banknaam.." required>
+    
+    <label for="opmerking">Opmerking</label>
+    <textarea id="opmerking" name="opmerking" placeholder="Plaats uw opmerking..." style="height:200px"></textarea>
+
+    <input type="submit" value="Aanvragen" name="aanvragen">
+  </form>
+</div>
+
+</body>
+</html>
