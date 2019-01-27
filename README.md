@@ -5,7 +5,7 @@
 
 ## **Instructies:** (Voor Farhen en groep)
 * **Download and install XAMPP: https://www.apachefriends.org/download.html** 
-* **Clone or download this project and put it in C:/xampp/htdocs**
+* **Clone or download and extract this project and put it in C:/xampp/htdocs**
 * **Run XAMPP Control panel and start Apache and MySQL**
 * **Go to http://localhost/phpmyadmin/**
 * **Click on new. Put beleggings_aanvraag in Database Name field and hit Create.**
