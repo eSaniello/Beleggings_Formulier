@@ -85,7 +85,9 @@ input[type=number] {
   margin: 5px 10px 5px 0;
   padding: 10px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
   -webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
 	-ms-transition: all 0.30s ease-in-out;
@@ -101,7 +103,7 @@ input[type=number]:focus{
 }
 
 .db_table_body{
-  background-color: #f2f2f2;
+  background-color: #d8d8d8;
 }
 
 .db_table {
@@ -120,11 +122,11 @@ input[type=number]:focus{
 }
 
 .db_table tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #bebebe;
 }
 
 .db_table tr:hover {
-  background-color: #ddd;
+  background-color: rgb(146, 212, 149);
 }
 
 .db_table th {
