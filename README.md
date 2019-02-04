@@ -3,7 +3,7 @@
 
 ### (Website boven op is alleen voor UI. Database stuff is not gonna work here xD)
 
-## **Instructies:** (Voor Farhen en groep)
+## **Instructies:**
 * **Download and install XAMPP: https://www.apachefriends.org/download.html** 
 * **Clone or download and extract this project and put it in C:/xampp/htdocs**
 * **Run XAMPP Control panel and start Apache and MySQL**
